@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- Shared -->
+    <script> var FBInstant; </script>
+    <!-- FB_START --><script src="https://connect.facebook.com/en_US/fbinstant.6.2.js"></script><!-- FB_END -->
+
+    <!-- BANANA_START -->
+        <script src="./Assets/Shared/FBInterface.js"></script>
+        <script src='./Assets/Shared/pep.js'></script>
+        <script src="./Assets/Shared/cannon.min.js"></script>
+        <script src="./Assets/Shared/babylon.js"></script>
+        <script src="./Assets/Shared/babylon.gui.min.js"></script>
+        <script src="./Assets/Shared/GameTime.js"></script>
+        <script src="./Assets/Shared/Game.js"></script>
+        <script src="./Assets/Shared/GameEvent.js"></script>
+        <script src="./Assets/Shared/GameUI/GameUI.js"></script>
+            <script src="./Assets/Shared/GameUI/Rectangle.js"></script>
+            <script src="./Assets/Shared/GameUI/Button.js"></script>
+            <script src="./Assets/Shared/GameUI/Ellipse.js"></script>
+            <script src="./Assets/Shared/GameUI/ImageRect.js"></script>
+            <script src="./Assets/Shared/GameUI/InputText.js"></script>
+            <script src="./Assets/Shared/GameUI/StackPanel.js"></script>
+            <script src="./Assets/Shared/GameUI/TextBlock.js"></script>
+            <script src="./Assets/Shared/GameUI/Output.js"></script>
+        <script src="./Assets/Shared/GameObject.js"></script>
+        <script src="./Assets/Shared/GameBehavior.js"></script>
+        <script src="./Assets/Shared/GameAudio/GameAudio.js"></script>
+            <script src="./Assets/Shared/GameAudio/AudioBase.js"></script>
+            <script src="./Assets/Shared/GameAudio/Music.js"></script>
+            <script src="./Assets/Shared/GameAudio/Sound.js"></script>
+            <script src="./Assets/Shared/GameAudio/SoundTrack.js"></script>
+        <script src="./Assets/Shared/BIPlatform/BIPlatform.js"></script>
+        <script src="./Assets/Shared/BIPlatform/PromotedGameBar_Babylon.js"></script>
+
+        <!-- ================== Custom scripts ============================-->
+        <!-- Behavior Scripts -->
+        <script src="./Assets/GameBehaviors/_General/Effect/Explosion.js"></script>
+        <script src="./Assets/GameBehaviors/_General/ObjectManager/CircularQueue.js"></script>
+        <script src="./Assets/GameBehaviors/_General/ObjectManager/ObjectManager.js"></script>
+        <script src="./Assets/GameBehaviors/_General/ObjectManager/ObjCache.js"></script>
+        <script src="./Assets/GameBehaviors/_General/AudioEffect.js"></script>
+        <script src="./Assets/GameBehaviors/_General/Input.js"></script>
+        <script src="./Assets/GameBehaviors/_General/LevelManager.js"></script>
+        <script src="./Assets/GameBehaviors/_General/Physics.js"></script>
+        <script src="./Assets/GameBehaviors/_General/Score.js"></script>
+        <script src="./Assets/GameBehaviors/Gun/GunMovement.js"></script>
+        <script src="./Assets/GameBehaviors/Obstacles/ClockRotation.js"></script>
+        <script src="./Assets/GameBehaviors/Obstacles/HorizontalMove.js"></script>
+        <script src="./Assets/GameBehaviors/Obstacles/SurpriseTrap.js"></script>
+        <script src="./Assets/GameBehaviors/Player/PlayerMovement.js"></script>
+        
+        <!-- Scenes -->
+        <script src="./Assets/GameScenes/MainScene.js"></script>
+        <script src="./Assets/GameScenes/Levels.js"></script>
+
+        <!-- UI -->
+        <!-- Common -->
+        <script src="./Assets/GameUIs/Common/SimpleMenu.js"></script>
+        <script src="./Assets/GameUIs/Common/ButtonWithText.js"></script>
+        <!-- Main Menu -->
+        <script src="./Assets/GameUIs/MainMenu/MainMenuButton.js"></script>
+        <script src="./Assets/GameUIs/MainMenu/MainMenu.js"></script>
+        <script src="./Assets/GameUIs/MainMenu/SoundOff.js"></script>
+        <!-- Main Menu -->
+        <script src="./Assets/GameUIs/HomeMenu/HomeMenu.js"></script>
+        <script src="./Assets/GameUIs/MainUI.js"></script>
+        <!-- HUD -->
+        <script src="./Assets/GameUIs/HUD/ScoreHUD.js"></script>
+        <script src="./Assets/GameUIs/HUD/HUDPanel.js"></script>
+        <!-- Pop Up Menu -->
+        <script src="./Assets/GameUIs/PopUpMenu/Tutorial.js"></script>
+        <!-- script src="./Assets/GameUIs/PopUpMenu/PopUpMenu.js"></script-->
+        <!-- script src="./Assets/GameUIs/PopUpMenu/PlayFriendsUI.js"></script-->
+    <!-- BANANA_END -->
+
+    <style>
+        html, body 
+        {
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: 'MainFont';
+        }
+
+        #Banana_Game_Canvas 
+        {
+            width   : 100%;
+            height  : 100%;
+            touch-action: none;
+        }
+
+        @font-face 
+        { 
+            font-family: 'MainFont';
+            src: url('./Assets/Textures/super_shooter_font.ttf') format('truetype'); 
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Game Body -->
+    <canvas id="Banana_Game_Canvas" touch-action="none"></canvas>
+    <script>
+        window.onload = function()
+        {
+            //Game.run([UI class name], [level class name], [model filename]);
+            Game.run(MainUI, MainScene, "AllModels", "SuperShooter", "testing"); 
+        };
+    </script>
+</body>
+</html>
