@@ -46,7 +46,8 @@ class LiangExporter(bpy.types.Operator):
             return {'FINISHED'}
 
         exporter = JsonExporter()
-        exporter.execute(context, 'C:\\Users\\seat3\\Desktop\\a.stephen')
+        p = bpy.path.abspath('//')
+        exporter.execute(context, '..\\a.liang') #TODO
 
         if (exporter.fatalError):
             self.report({'ERROR'}, exporter.fatalError)
