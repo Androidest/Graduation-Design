@@ -1,5 +1,5 @@
 const fs = require('fs');
-fs.readFile('./index.html', 'utf-8', function(err, script) 
+fs.readFile('./Source/index.html', 'utf-8', function(err, script) 
 {
     if(err) console.log(err);
 
@@ -11,7 +11,7 @@ fs.readFile('./index.html', 'utf-8', function(err, script)
         let str = script.slice(start, end);
         script = script.replace(str, '<!-- FB_START --><script src="https://connect.facebook.com/en_US/fbinstant.6.2.js"></script>');
         
-        fs.writeFile('./index.html', script, 'utf-8', function(err)
+        fs.writeFile('./Source/index.html', script, 'utf-8', function(err)
         {
             if(err) console.log(err);
         });

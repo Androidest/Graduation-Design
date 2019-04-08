@@ -1,5 +1,7 @@
 const fs = require('fs');
-fs.readFile('./index.html', 'utf-8', function(err, data) 
+var path = require("path");
+
+fs.readFile('./Source/index.html', 'utf-8', function(err, data) 
 {
     if(err) console.log(err);
 
@@ -22,8 +24,8 @@ fs.readFile('./index.html', 'utf-8', function(err, data)
             break;
 
         let src = data.slice(start + delta, end);
-        let path = eval(src.slice(src.indexOf("=")+1));
-        command += " "+path;
+        let sourcePath = eval(src.slice(src.indexOf("=")+1));
+        command += path.join(" Source/", sourcePath);
     }
     
     fs.writeFile('./Tools/biMinify.bat', command, 'utf-8', function(err)

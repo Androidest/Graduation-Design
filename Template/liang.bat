@@ -4,23 +4,18 @@ set AppID=182301976032601
 set AccessToken=EAAYsfZAxiFmMBAI5fVJT1UpJl2cUfogfiPnx3ORVpZAa62OHsW2gFa8C92RIlavxgpxsAae5e5AOi48WnLQ6LRqHVg8eXkFRVZCAcsQpSZAJUZCeYtLtARBTgXj7PAUsdccwEcvdgWQHxWL1YrvgJOuKYiqe2ikFSrcLDqtMYbgZDZD
 set imgQuality=50-70
 ::imgQuality=min-max, default 40-50
-set mobileIP=192.168.3.8
-
-::=================================common==================================
-xcopy .\Tools\key.pem .\ /h /y
-xcopy .\Tools\cert.pem .\ /h /y
 
 ::=================================build options==================================
-::mobile
-if "%1"=="-m" (
-    node .\Tools\removeFBScript.js
-    http-server -c-1 -p 8080 -a %mobileIP%
+::PC
+if "%1"=="-https" (
+    node .\Tools\addFBScript.js
+    http-server ./Source/ --key ./Tools/key.pem --cert ./Tools/cert.pem --ssl -c-1 -p 8080 -a 0.0.0.0
 )
 
-::PC
-if "%1"=="-p" (
-    node .\Tools\addFBScript.js
-    http-server --ssl -c-1 -p 8080 -a localhost
+::mobile
+if "%1"=="-http" (
+    node .\Tools\removeFBScript.js
+    http-server ./Source/ -c-1 -p 8080 -a 0.0.0.0
 )
 
 ::upload test
@@ -29,8 +24,7 @@ if "%1"=="-t" (
     node .\Tools\addFBScript.js
     call :testPrepare
     call :export
-    call :upload
-    http-server ./Build/ --ssl -c-1 -p 8080 -a localhost
+    EXIT /B 0
 )
 
 ::upload release
@@ -40,8 +34,8 @@ if "%1"=="-r" (
     call :minifyJS
     call :minifyImage
     call :export
-    call :upload
-    http-server ./Build/ --ssl -c-1 -p 8080 -a localhost
+    http-server ./Build/ --key ./Tools/key.pem --cert ./Tools/cert.pem --ssl -c-1 -p 8080 -a 0.0.0.0
+    EXIT /B 0
 )
 
 ::=================================functions==================================
@@ -56,9 +50,9 @@ EXIT /B 0
 :releasePrepare
     rmdir /S /Q .\Build
     mkdir .\Build
-    xcopy .\Assets\Audio .\Build\Assets\Audio /e /i /h /y
-    xcopy .\Assets\Models .\Build\Assets\Models /e /i /h /y
-    xcopy .\Assets\Textures .\Build\Assets\Textures /e /i /h /y
+    xcopy .\Source\Assets\Audio .\Build\Assets\Audio /e /i /h /y
+    xcopy .\Source\Assets\Models .\Build\Assets\Models /e /i /h /y
+    xcopy .\Source\Assets\Textures .\Build\Assets\Textures /e /i /h /y
     copy .\Tools\index_release.html .\Build\index.html /y
     copy .\Tools\fbapp-config.json .\Build\fbapp-config.json /y
 EXIT /B 0
