@@ -1,0 +1,22 @@
+{"producer":{"name":"Blender","version":"2.80 (sub 54)","exporter_version":"6.0-beta 9","file":"Source_Assets_Models_AllModels.liang"},
+"autoClear":true,"clearColor":[0.0509,0.0509,0.0509],"gravity":[0,-9.81,0],
+"materials":[{"name":"Source_Assets_Models_AllModels.Material","id":"Source_Assets_Models_AllModels.Material","customType":"BABYLON.StandardMaterial","backFaceCulling":true,"checkReadyOnlyOnce":false,"maxSimultaneousLights":4,"specular":[0.5,0.5,0.5],"specularPower":64,"alpha":1,"indexOfRefraction":1.45, 
+"diffuseTexture":{"name":"../Textures/cube.png","level":1,"hasAlpha":true,"coordinatesMode":0,"uOffset":0,"vOffset":0,"uScale":1,"vScale":1,"uAng":0,"vAng":0,"wAng":0,"wrapU":1,"wrapV":1,"coordinatesIndex":0}}],
+"multiMaterials":[],
+"skeletons":[],
+"meshes":[{"name":"Cube","id":"Cube","materialId":"Source_Assets_Models_AllModels.Material","billboardMode":0,"position":[0,1,0],"rotation":[0,0,0],"scaling":[1,1,1],"isVisible":true,"freezeWorldMatrix":false,"isEnabled":true,"checkCollisions":false,"receiveShadows":false,"pickable":true,"tags":""
+,"positions":[1,1,1,1,-1,-1,1,-1,1,1,-1,-1,-1,1,-1,-1,-1,-1,1,1,-1,-1,1,1,-1,1,-1,-1,-1,1,-1,1,-1,-1,1,1,1,-1,1,-1,-1,-1,-1,-1,1,1,1,1,-1,-1,1
+,-1,1,1,1,1,-1,1,-1,-1,1,1,-1,1,1,1,-1,-1,-1,-1,1,-1,1,-1,1,1,-1,-1,-1,-1,-1,1,1,1,1,-1,1,-1,-1,1]
+,"normals":[1,0,0,1,0,0,1,0,0,0,0,-1,0,0,-1,0,0,-1,0,1,0,0,1,0,0,1,0,-1,0,0,-1,0,0,-1,0,0,0,-1,0,0,-1,0,0,-1,0,0,0,1,0,0,1
+,0,0,1,1,0,0,0,0,-1,0,0,-1,0,1,0,-1,0,0,-1,0,0,0,-1,0,0,-1,0,0,-1,0,0,0,1,0,0,1,0,0,1]
+,"uvs":[0.493,0.669,0.243,0.338,0.493,0.338,0.243,0.338,-0.006,0.67,-0.006,0.338,0.244,0.67,0.494,1.001,0.244,1.001,0.743,0.337,0.993,0.669,0.743,0.669,0.493,0.338,0.243,0.006,0.493,0.006,0.493,0.669,0.743,0.337,0.743,0.669,0.244,0.67,0.243,0.338,0.244,0.67,0.493,0.669,0.992,0.337,0.993,0.669,0.493,0.338
+,0.243,0.338,0.243,0.006,0.493,0.669,0.493,0.338,0.743,0.337]
+,"indices":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,0,18,1,19,20,4,6,21,7,9,22,23,24,25,26,27,28,29]
+,"subMeshes":[{"materialIndex":0,"verticesStart":0,"verticesCount":30,"indexStart":0,"indexCount":36}]
+,"instances":[]}
+],
+"morphTargetManagers":[],
+"cameras":[{"name":"Camera","id":"Camera","position":[7.3589,4.9583,-6.9258],"rotation":[0.3655,-0.8149,0],"fov":0.6911,"minZ":0.1,"maxZ":100,"speed":1,"inertia":0.9,"checkCollisions":false,"applyGravity":false,"ellipsoid":[0.2,0.9,0.2],"cameraRigMode":0,"interaxial_distance":0.0637,"type":"UniversalCamera"}],"activeCamera":"Camera",
+"lights":[{"name":"Light","id":"Light","type":0,"position":[2.7624,5.6191,-3.0396],"range":30.002,"intensityMode":0,"intensity":1,"diffuse":[1,1,1],"specular":[1,1,1],"radius":0.1}],
+"shadowGenerators":[]
+}

@@ -62,7 +62,7 @@ class Game
         this.level = new levelName();
         FBInterface.setLoadingProgress(73);
           
-        BABYLON.SceneLoader.Load('Assets/Models/', modelName+".babylon", this.engine, this.onLoadSuccess.bind(this)); //load scene
+        BABYLON.SceneLoader.Load('Assets/Models/', modelName+".liang", this.engine, this.onLoadSuccess.bind(this)); //load scene
     }
 
     //===========callback function call on loading start===========================

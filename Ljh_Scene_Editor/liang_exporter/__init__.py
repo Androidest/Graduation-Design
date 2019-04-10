@@ -1,4 +1,4 @@
-import bpy
+import bpy, os
 from bpy_extras.io_utils import ExportHelper, ImportHelper
 
 # allow module to be changed during a session (dev purposes)
@@ -47,7 +47,7 @@ class LiangExporter(bpy.types.Operator):
 
         exporter = JsonExporter()
         p = bpy.path.abspath('//')
-        exporter.execute(context, '..\\a.liang') #TODO
+        exporter.execute(context, p+'../../Source/Assets/Models/AllModels.liang') #TODO
 
         if (exporter.fatalError):
             self.report({'ERROR'}, exporter.fatalError)

@@ -1,110 +1,28 @@
-Exporter version: 5.6.4, Blender version: 2.79 (sub 0)
+Exporter version: 6.0-beta 9, Blender version: 2.80 (sub 54)
 ========= Conversion from Blender to Babylon.js =========
 	Scene settings used :
-		export scope        :  ALL
 		inline textures     :  false
+		Material Type       :  STD
 		Positions Precision :  4
 		Normals Precision   :  3
 		UVs Precision       :  3
 		Vert Color Precision:  3
 		Mat Weight Precision:  2
-		texture directory   :  D:\Workspace\SuperShooter\Assets\Models\../Textures
+		texture directory   :  D:\Workspace\Graduation-Design\Ljh_Template\Resources\Models\../../Source/Assets/Models\../Textures/
 	Python World class constructor completed
-	processing begun of mesh:  Obj_4
-		processing begun of Standard material:  Bridge_Mat
-		num positions      :  8
-		num normals        :  8
-		num uvs            :  0
+	processing begun of mesh:  Cube
+		processing begun of material:  Source_Assets_Models_AllModels.Material
+			processing texture cube
+				texture type:  diffuseTexture, mapped using: "UVMap"
+		num positions      :  30
+		num normals        :  30
+		num uvs            :  60
 		num uvs2           :  0
 		num colors         :  0
 		num indices        :  36
-	processing begun of mesh:  Obj_3
-		processing begun of Standard material:  Target3_Mat
-		num positions      :  8
-		num normals        :  8
-		num uvs            :  0
-		num uvs2           :  0
-		num colors         :  0
-		num indices        :  36
-	processing begun of mesh:  Obj_2
-		processing begun of Standard material:  Target2_Mat
-		num positions      :  8
-		num normals        :  8
-		num uvs            :  0
-		num uvs2           :  0
-		num colors         :  0
-		num indices        :  36
-	processing begun of mesh:  Obj_1
-		processing begun of Standard material:  Target1_Mat
-		num positions      :  8
-		num normals        :  8
-		num uvs            :  0
-		num uvs2           :  0
-		num colors         :  0
-		num indices        :  36
-	processing begun of mesh:  Obj_0
-		processing begun of Standard material:  Energy_Mat
-		num positions      :  10
-		num normals        :  10
-		num uvs            :  0
-		num uvs2           :  0
-		num colors         :  0
-		num indices        :  48
-	processing begun of mesh:  Bullet
-		processing begun of Standard material:  GunLight_Mat
-		num positions      :  34
-		num normals        :  34
-		num uvs            :  0
-		num uvs2           :  0
-		num colors         :  0
-		num indices        :  192
-	processing begun of mesh:  Beacon
-		registered as also a user of material:  GunLight_Mat
-		num positions      :  4
-		num normals        :  4
-		num uvs            :  0
-		num uvs2           :  0
-		num colors         :  0
-		num indices        :  6
-	processing begun of mesh:  Bridge
-		registered as also a user of material:  Bridge_Mat
-		num positions      :  19
-		num normals        :  19
-		num uvs            :  38
-		num uvs2           :  0
-		num colors         :  76
-		num indices        :  36
-	processing begun of mesh:  Road
-		processing begun of Standard material:  Road_Mat
-			Diffuse texture found "Road"
-				Image texture found, type:  diffuseTexture, mapped using: "UVMap"
-		num positions      :  12
-		num normals        :  12
-		num uvs            :  24
-		num uvs2           :  0
-		num colors         :  48
-		num indices        :  18
-	processing begun of camera (UniversalCamera):  Player
-	processing begun of node:  Gun
-	processing begun of node:  ShootingTail
-	processing begun of node:  ShootingHead
-	processing begun of mesh:  GunBody
-		processing begun of Standard material:  Gun_Mat
-		num positions      :  44
-		num normals        :  44
-		num uvs            :  88
-		num uvs2           :  0
-		num colors         :  0
-		num indices        :  78
-	processing begun of mesh:  GunLight
-		registered as also a user of material:  GunLight_Mat
-		num positions      :  60
-		num normals        :  60
-		num uvs            :  120
-		num uvs2           :  0
-		num colors         :  0
-		num indices        :  102
-========= Writing of scene file started =========
-========= Writing of scene file completed =========
+	processing begun of camera (UniversalCamera):  Camera
+	processing begun of light (POINT):  Light
+========= Writing of JSON file started =========
+========= Writing of JSON file completed =========
 ========= end of processing =========
-elapsed time:  0 min, 0.0369 secs
+elapsed time:  0 min, 0.015 secs
