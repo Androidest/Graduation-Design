@@ -6,9 +6,11 @@
 
     <!-- Shared -->
     <script> var FBInstant; </script>
-    <!-- FB_START --><script src="https://connect.facebook.com/en_US/fbinstant.6.2.js"></script><!-- FB_END -->
+    <!-- FB_START --><!-- FB_END -->
 
     <!-- BANANA_START -->
+        <script src="Lib/artoolkit.debug.js"></script>
+        <script src="Lib/artoolkit.api.js"></script>
         <script src="Lib/FBInterface.js"></script>
         <script src='Lib/pep.js'></script>
         <script src="Lib/cannon.min.js"></script>
@@ -33,6 +35,7 @@
             <script src="Lib/GameAudio/Music.js"></script>
             <script src="Lib/GameAudio/Sound.js"></script>
             <script src="Lib/GameAudio/SoundTrack.js"></script>
+        <script src="Lib/GameBehaviors/ARWorld.js"></script>
         <script src="Lib/BIPlatform/BIPlatform.js"></script>
         <script src="Lib/BIPlatform/PromotedGameBar_Babylon.js"></script>
 
@@ -66,8 +69,6 @@
         <!-- HUD -->
         <script src="Assets/GameUIs/HUD/ScoreHUD.js"></script>
         <script src="Assets/GameUIs/HUD/HUDPanel.js"></script>
-        <!-- Pop Up Menu -->
-        <script src="Assets/GameUIs/PopUpMenu/Tutorial.js"></script>
     <!-- BANANA_END -->
 
     <style>
@@ -91,7 +92,7 @@
         @font-face 
         { 
             font-family: 'MainFont';
-            src: url('Assets/Textures/super_shooter_font.ttf') format('truetype'); 
+            src: url('Assets/Images/super_shooter_font.ttf') format('truetype'); 
         }
     </style>
 </head>

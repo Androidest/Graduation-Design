@@ -18,7 +18,7 @@ class PromotedGameBar extends Rectangle
         this.background = null;
 
         let bg = new ImageRect(0,0,1,1);
-        bg.setImage("Assets/Textures/UI/" + imgName);
+        bg.setImage("Assets/Images/UI/" + imgName);
         this.addChild(bg);
 
         this.buttons = new Array(numOfRequestedGames);

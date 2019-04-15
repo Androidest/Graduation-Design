@@ -89,7 +89,13 @@ class GameObject
         if (obj==null) obj = scene.getCameraByName(name);
         if (obj==null) obj = scene.getLightByName(name);
         if (obj==null) obj = scene.getMaterialByName(Game.modelName+'.'+name);
-        if (obj==null) console.error("Object Named '" + name + "' Not Found!");
+        if (obj==null) 
+        {
+            console.error("Object Named '" + name + "' Not Found!");
+            return null;
+        }
+        this.overrideObject(obj);
+            
         return obj;
     }
 

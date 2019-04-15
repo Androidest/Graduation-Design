@@ -8,16 +8,21 @@ bl_info = {
     "category" : "Object"
 }
 
-import bpy
+import bpy, os, subprocess
 from bpy.types import ( Header, Menu, Panel, Operator )
 from .liang_exporter import exporter_register, exporter_unregister
+httpServer = subprocess.Popen("", shell=True)
 
 class MyOp(Operator):
     bl_idname = "view3d.testop"
     bl_label = "testOp"
 
-    def execute(self, context):
-        print("Hello")
+    def execute(self, context): 
+        global httpServer
+        os.chdir(bpy.path.abspath('//')+"..//..//")
+        subprocess.Popen("TASKKILL /F /PID {pid} /T".format(pid=httpServer.pid))
+        httpServer = subprocess.Popen(".\\liang.bat -https", shell=True)
+        return {'FINISHED'}
 
 class StephenPanel(Panel):
     bl_idname = "VIEW_3D_PT_StephenPanel"
@@ -29,7 +34,8 @@ class StephenPanel(Panel):
     def draw(self, context):
         layout = self.layout
         layout.label(text = "Hello World")
-        layout.operator("export.liang_exporter", text="MyOp" ) 
+        layout.operator("export.liang_exporter", text="Export" ) 
+        layout.operator("view3d.testop", text="MyOp" ) 
         
 classes = (
     # Operator sub-classes

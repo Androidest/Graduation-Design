@@ -66,7 +66,7 @@ class PopUpMenu extends SimpleMenu
         this.addChild(this.panel);
 
         let img = new ImageRect(0,0,1,1);
-        img.setImage("Assets/Textures/UI/PopUpPanel.png");
+        img.setImage("Assets/Images/UI/PopUpPanel.png");
         this.panel.addChild(img);
 
         let title = new TextBlock(0, 0, 1, 0.25);

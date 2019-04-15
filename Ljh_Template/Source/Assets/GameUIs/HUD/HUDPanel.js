@@ -23,19 +23,19 @@ class HUDPanel extends Rectangle
         let imSize = height*0.08 +"px";
         let img = new ImageRect(0, "30%", imSize, imSize);
         img.horizontalAlignment = AlignHCenter;
-        img.setImage("Assets/Textures/UI/energy.png");
+        img.setImage("Assets/Images/UI/energy.png");
         //img.addOnClick(()=>GameEvent.triggerEvent("Restart", false));
         this.addChild(img);
 
         let h = height * 0.04;
         let w = h * 4.5;
 
-        this.score = new ScoreHUD("-5%", "8%", w, h, "Assets/Textures/UI/score.png");
+        this.score = new ScoreHUD("-5%", "8%", w, h, "Assets/Images/UI/score.png");
         this.score.horizontalAlignment = AlignRight;
         this.score.setText("--");
         this.addChild(this.score);
 
-        /*this.best = new ScoreHUD("65%", "8%", w, h, "Assets/Textures/UI/best.png");
+        /*this.best = new ScoreHUD("65%", "8%", w, h, "Assets/Images/UI/best.png");
         this.best.setText("--");
         this.best.setColor("#FFE682");
         this.addChild(this.best);*/
@@ -58,7 +58,7 @@ class HUDPanel extends Rectangle
         GameUI.addChild(this.prompt);
 
         this.hitEffect = new ImageRect(0,0,1,1);
-        this.hitEffect.setImage("Assets/Textures/UI/hitEffect.png");
+        this.hitEffect.setImage("Assets/Images/UI/hitEffect.png");
         this.hitEffect.isVisible = false;
         GameUI.addChild(this.hitEffect);
     

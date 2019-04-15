@@ -53,7 +53,7 @@ class PlayFriendsUI
         button.addOnClick(this.onPlayFriends.bind(this));
 
         let img = new ImageRect(0,0,1,1);
-        img.setImage("Assets/Textures/UI/PlayFriends_button.png");
+        img.setImage("Assets/Images/UI/PlayFriends_button.png");
         button.addChild(img);
         
         this.panelButton = button;

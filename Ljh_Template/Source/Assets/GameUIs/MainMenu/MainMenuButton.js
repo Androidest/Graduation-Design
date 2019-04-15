@@ -12,7 +12,7 @@ class MainMenuButton extends Button
         let imgh = (height*0.4) + "px";
 
         let img = new ImageRect(imgx,imgy,imgw,imgh);
-        img.setImage("Assets/Textures/UI/main_menu_button.png");
+        img.setImage("Assets/Images/UI/main_menu_button.png");
 
         this.isOn = false;
         this.addChild(img);

@@ -3,8 +3,12 @@ class MainScene
     start()
     {
         this.optimize();
+        /*let world = GameObject.findByName("ARWorld");
+        let camera = GameObject.findByName("Camera");
+        world.addBehavior(ARWorld, camera);
 
-        
+        let cube = GameObject.findByName("Tree");
+        cube.convertToFlatShadedMesh();*/
     }
 
     optimize()

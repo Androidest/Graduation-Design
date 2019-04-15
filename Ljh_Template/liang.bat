@@ -8,7 +8,7 @@ set imgQuality=50-70
 ::=================================build options==================================
 ::PC
 if "%1"=="-https" (
-    node .\Tools\addFBScript.js
+    node .\Tools\removeFBScript.js
     http-server ./Source/ --key ./Tools/key.pem --cert ./Tools/cert.pem --ssl -c-1 -p 8080 -a 0.0.0.0
 )
 

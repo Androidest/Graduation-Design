@@ -73,7 +73,7 @@ class HomeMenu extends SimpleMenu
         let titlew = Game.canvas.width*0.8;
         let titleh = titlew/284.0*48;
         let title = new ImageRect(titlex + "px", titley + "px", titlew + "px", titleh + "px");
-        title.setImage("Assets/Textures/UI/title.png");
+        title.setImage("Assets/Images/UI/title.png");
         this.addChild(title);
     }
 
@@ -142,7 +142,7 @@ class HomeMenu extends SimpleMenu
         let delta = h*0.1166;
         let bgHeight = h*1.18;
         let bg = new ImageRect(x + "px", panelY-delta + "px", w + "px", bgHeight + "px");
-        bg.setImage("Assets/Textures/UI/leaderboard.png");
+        bg.setImage("Assets/Images/UI/leaderboard.png");
         this.addChild(bg);
 
         //========init leaderboard switch buttons===============
@@ -154,7 +154,7 @@ class HomeMenu extends SimpleMenu
         for( let i=0; i<2; ++i)
         {
             let cover = new ImageRect((x+i*cdelta)+"px", by+"px", cw+"px", bh+"px")
-            cover.setImage("Assets/Textures/UI/button_cover.png");
+            cover.setImage("Assets/Images/UI/button_cover.png");
             cover.addOnClick(()=>this.onSwitchLeaderboard(i));
             this.lbButtons[i] = cover;
             this.addChild(cover);
@@ -204,7 +204,7 @@ class HomeMenu extends SimpleMenu
             this.addChild(button);
 
             let img = new ImageRect(0, 0, 1, 1); 
-            img.setImage("Assets/Textures/UI/" + imgName[i]);
+            img.setImage("Assets/Images/UI/" + imgName[i]);
             button.addChild(img);
 
             b[i] = button;

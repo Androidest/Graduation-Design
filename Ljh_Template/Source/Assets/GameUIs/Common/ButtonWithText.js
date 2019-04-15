@@ -8,7 +8,7 @@ class ButtonWithText extends Button
         let imgw = (h*0.8) + "px";
         let imgx = (h*0.3) + "px";
         let img = new ImageRect(imgx,0,imgw,imgw); 
-        img.setImage("Assets/Textures/UI/" + imgName);
+        img.setImage("Assets/Images/UI/" + imgName);
 
         let fontSize = h*0.35;
         this.label = new TextBlock((h*1.5) + "px", 0, 1, 1);

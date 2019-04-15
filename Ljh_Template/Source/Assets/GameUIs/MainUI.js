@@ -6,12 +6,8 @@ class MainUI
         let hud = new HUDPanel();
         let menu = new MainMenu();
         let menuButton = new MainMenuButton();
-        let tutorial = new Tutorial();
-        //let popUpMenu = new PopUpMenu();
 
         GameUI.addChild(new Output());
-        GameUI.addChild(tutorial);
-        //GameUI.addChild(popUpMenu);
         GameUI.addChild(hud);
         GameUI.addChild(menu);
         GameUI.addChild(menuButton);

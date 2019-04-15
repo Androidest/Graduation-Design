@@ -18,7 +18,7 @@ class SoundOff extends ImageRect
             GameEvent.addEvent(eventName, this.onSwitch2.bind(this));
         }
             
-        this.setImage("Assets/Textures/UI/" + imgName + ".png");
+        this.setImage("Assets/Images/UI/" + imgName + ".png");
         this.isVisible = false;
     }
 

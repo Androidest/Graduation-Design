@@ -85,7 +85,7 @@ class Texture:
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     def to_json_file(self, file_handler):
         file_handler.write(', \n"' + self.textureType + '":{')
-        write_string(file_handler, 'name', "../Textures/"+self.fileNoPath, True)
+        write_string(file_handler, 'name', "../Images/Textures/"+self.fileNoPath, True)
 
         write_float(file_handler, 'level', self.level)
         write_bool(file_handler, 'hasAlpha', self.hasAlpha)

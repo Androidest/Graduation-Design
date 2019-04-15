@@ -8,7 +8,7 @@ class Tutorial extends Rectangle
 
         let width = Game.canvas.width * 0.5;
         let img = new ImageRect(0, "25%", width+"px", width*1.26+"px");
-        img.setImage("Assets/Textures/UI/tutorial.png");
+        img.setImage("Assets/Images/UI/tutorial.png");
         img.verticalAlignment = AlignVCenter;
         img.horizontalAlignment = AlignHCenter;
         this.addChild(img);
