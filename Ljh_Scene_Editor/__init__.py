@@ -21,7 +21,7 @@ class MyOp(Operator):
         global httpServer
         os.chdir(bpy.path.abspath('//')+"..//..//")
         subprocess.Popen("TASKKILL /F /PID {pid} /T".format(pid=httpServer.pid))
-        httpServer = subprocess.Popen(".\\liang.bat -https", shell=True)
+        httpServer = subprocess.Popen(".\\liang.bat -http", shell=True)
         return {'FINISHED'}
 
 class StephenPanel(Panel):

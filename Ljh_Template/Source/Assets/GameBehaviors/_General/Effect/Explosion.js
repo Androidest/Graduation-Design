@@ -1,5 +1,5 @@
 class Explosion extends BABYLON.ParticleSystem
-{
+{ 
     constructor()
     {
         super("Explosion", 40, Game.scene);

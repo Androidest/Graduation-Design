@@ -58,7 +58,7 @@ class LiangExporter(bpy.types.Operator):
         elif (exporter.nWarnings > 0):
             self.report({'WARNING'}, 'Processing completed, but ' + str(exporter.nWarnings) + ' WARNINGS were raised,  see log file.')
 
-        webbrowser.open('https://localhost:8080/')
+        #webbrowser.open('https://localhost:8080/')
         
         return {'FINISHED'}
 

@@ -15,7 +15,7 @@ if "%1"=="-https" (
 ::mobile
 if "%1"=="-http" (
     node .\Tools\removeFBScript.js
-    http-server ./Source/ -c-1 -p 8080 -a 0.0.0.0
+    node .\Tools\reload\bin\reload -p 8080 -n 0.0.0.0 -d Source/ -v true
 )
 
 ::upload test
