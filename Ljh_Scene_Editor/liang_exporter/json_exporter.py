@@ -285,12 +285,20 @@ class JsonExporter:
 
         # Create or update .manifest file
         if self.settings.writeManifestFile:
+            version = str(calendar.timegm(time.localtime()))
             file_handler = open(self.filepathMinusExtension + '.liang.manifest', 'w', encoding='utf8')
             file_handler.write('{\n')
-            file_handler.write('\t"version" : ' + str(calendar.timegm(time.localtime())) + ',\n')
+            file_handler.write('\t"version" : ' + version + ',\n')
             file_handler.write('\t"enableSceneOffline" : true,\n')
             file_handler.write('\t"enableTextureOffline" : true\n')
             file_handler.write('}')
+            file_handler.close()
+
+            file_handler = open(self.filepathMinusExtension + '.liang.js', 'w', encoding='utf8')
+            file_handler.write("//This file is used by reload module\n")
+            file_handler.write("//Browser tab will auto-refresh after updating this file\n")
+            file_handler.write("//By Liang Junhua\n")
+            file_handler.write( "var codeVersion = " + version )
             file_handler.close()
 
         Logger.log('========= Writing of JSON file completed =========', 0)

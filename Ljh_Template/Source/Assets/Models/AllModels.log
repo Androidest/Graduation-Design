@@ -18,29 +18,18 @@ Exporter version: 6.0-beta 9, Blender version: 2.80 (sub 54)
 		num uvs2           :  0
 		num colors         :  0
 		num indices        :  6
-	processing begun of mesh:  Temple
-		processing begun of material:  Source_Assets_Models_AllModels.Temple
-			processing texture temple
-				texture type:  diffuseTexture, mapped using: "UVMap"
-		Custom split normals being used
-		num positions      :  36683
-		num normals        :  36683
-		num uvs            :  73366
-		num uvs2           :  0
-		num colors         :  0
-		num indices        :  89106
-	processing begun of mesh:  Ancient Building
+	processing begun of mesh:  Car
 		processing begun of material:  Source_Assets_Models_AllModels.Palette
 			processing texture palette
-				texture type:  diffuseTexture, mapped using: "UVChannel_1"
+				texture type:  diffuseTexture, mapped using: "UVMap"
 		Custom split normals being used
-		num positions      :  4114
-		num normals        :  4114
-		num uvs            :  8228
+		num positions      :  1677
+		num normals        :  1677
+		num uvs            :  3354
 		num uvs2           :  0
 		num colors         :  0
-		num indices        :  5292
-	processing begun of mesh:  Car
+		num indices        :  2244
+	processing begun of mesh:  Car.001
 		processing begun of material:  Source_Assets_Models_AllModels.Palette
 		registered as also a user of material:  Source_Assets_Models_AllModels.Palette
 		Custom split normals being used
@@ -66,14 +55,14 @@ Exporter version: 6.0-beta 9, Blender version: 2.80 (sub 54)
 		processing begun of material:  Source_Assets_Models_AllModels.Bark
 		processing begun of multimaterial:  Source_Assets_Models_AllModels.Multimaterial#0
 		Custom split normals being used
-		num positions      :  505
-		num normals        :  505
-		num uvs            :  1010
+		num positions      :  1363
+		num normals        :  1363
+		num uvs            :  2726
 		num uvs2           :  0
 		num colors         :  0
 		num indices        :  1500
 	processing begun of camera (UniversalCamera):  Camera
-	processing begun of mesh:  Tree1
+	processing begun of mesh:  Tree.001
 		processing begun of material:  Source_Assets_Models_AllModels.Tree
 		processing begun of material:  Source_Assets_Models_AllModels.Bark
 		registered as also a user of material:  Source_Assets_Models_AllModels.Bark
@@ -90,4 +79,4 @@ Exporter version: 6.0-beta 9, Blender version: 2.80 (sub 54)
 ========= Writing of JSON file started =========
 ========= Writing of JSON file completed =========
 ========= end of processing =========
-elapsed time:  0 min, 5.1886 secs
+elapsed time:  0 min, 1.2846 secs

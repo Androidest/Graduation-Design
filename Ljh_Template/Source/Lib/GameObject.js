@@ -11,7 +11,6 @@ class GameObject
                 this.shadowGenerators.push(shadowGenerator);
         }
 
-        this.destroyByName("Empty");
         for(let obj of Game.scene.cameras) 
             this.overrideObject(obj);
         for(let obj of Game.scene.meshes) 
