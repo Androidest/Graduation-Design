@@ -33,11 +33,11 @@ class MainScene
         let tree = GameObject.findByName("Tree"); 
         tree.isVisible = true;
         tree.position.y += 0;
-        tree.addBehavior(TreeMovement);
+        //tree.addBehavior(TreeMovement);
 
         let car = GameObject.findByName("Car");
-        car.addBehavior(CarMovement);
-        car.addBehavior(TreeMovement);
+        //car.addBehavior(CarMovement);
+        //car.addBehavior(TreeMovement);
         /*let world = GameObject.findByName("ARWorld");
         let camera = GameObject.findByName("Camera");
         world.addBehavior(ARWorld, camera);
